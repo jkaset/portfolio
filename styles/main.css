@@ -128,7 +128,7 @@ h3 {
 .tech {
     text-decoration: none;
     color: #5DADE2;
-}
+} 
 /*--------------------------------------*/
 /* HEADER AND NAV*/ 
 /*--------------------------------------*/
@@ -210,4 +210,35 @@ header {
 	-ms-border-radius: 10%;
 	-o-border-radius: 10%;
 	text-decoration: none;
+}
+
+/*--------------------------------------*/
+/* EXPERIENCE AND EDUCATION */ 
+/*--------------------------------------*/
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.experience-img {
+	width: 200px;
+}
+
+.education-card {
+	text-align: center;
+}
+
+/*--------------------------------------*/
+/* TECH STACK */ 
+/*--------------------------------------*/
+.img {
+	width: 70px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logos-container {
+	display: flex;
 }
