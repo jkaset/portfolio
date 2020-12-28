@@ -48,7 +48,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse collapse" id="navbarCollapse">
+          <div class="navbar-collapse collapse navlinks" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
@@ -66,23 +66,40 @@
                 <a class="nav-link" href="#">Portfolio</a>
               </li>
             </ul>
+
+            <div >
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/jkaset/" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/jkaset/" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+                <a href="mailto:jasminkaset@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+
           </div>
         </div>
       </nav>
-      <!-- END NAV -->
-      <!-- START HEADER -->
-
-      <div class="hero-text-box" id="home">
-        <h1>Hi, I'm Jas,<br />Full Stack Software Developer.</h1><br/><h1>Let's work together.</h1>
+      <section class="cover-img">
+        <div class="cover-container">
+          <div class="text-box" id="home">
+        <h1>Hi, I'm Jas,<br />Full Stack Software Developer.</h1>
         <br />
 
         <a class="btn btn-full js--scroll-to-features" href="#about"
           >Learn More</a
         >
-        <a class="btn btn-ghost js--scroll-to-memes" href="#contact"
-          >Get in Touch</a
-        >
-      </div>
+        <a class="btn btn-ghost" href="mailto:jasminkaset@gmail.com" target="_blank"
+          >Get in Touch</a>
+          </div>
+        </div>
+      </section>
+      <!-- END NAV -->
+      <!-- START HEADER -->
+
+      
     </header>
     <!-- END HEADER -->
 
@@ -148,7 +165,7 @@
               </p>
               <p>
                 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseNSS" aria-expanded="false" aria-controls="collapseNSS">
+                <button class="btn btn-body" type="button" data-toggle="collapse" data-target="#collapseNSS" aria-expanded="false" aria-controls="collapseNSS">
                   See more
                 </button>
               </p>
@@ -173,7 +190,7 @@
                 alt="Jasmin Kaset Music">
             </div>
             <div class="card-body">
-                <h4 class="card-title">Professional Musician | Jasmin Kaset * You Drive * Birdcloud</h4>
+                <h4 class="card-title">Professional Musician | Jasmin Kaset, You Drive, Birdcloud</h4>
                 <h6 class="card-subtitle mb-2 text-muted">2012-2019</h6>
                 <p class="card-text">Touring across three continents and landing multiple commercial spots, my time as a full-time musician was marked by feats of teamwork and adaptability in an uncontrollable work environment. Helping to bring those project to success will always be a lifetime achievement for me.
                  
@@ -181,7 +198,7 @@
 
                 <p>
                 
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="false" aria-controls="collapseMusic">
+                  <button class="btn btn-body" type="button" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="false" aria-controls="collapseMusic">
                     See more
                   </button>
                 </p>
@@ -214,7 +231,7 @@
 
                   <p>
                 
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSideshow" aria-expanded="false" aria-controls="collapseSideshow">
+                    <button class="btn btn-body" type="button" data-toggle="collapse" data-target="#collapseSideshow" aria-expanded="false" aria-controls="collapseSideshow">
                       See more
                     </button>
                   </p>
@@ -251,7 +268,7 @@
     <h2>Technologies</h2>
     
         <div class="logos-container">
-          
+          <div class="logos-container-row1">
           <div class="logo">
             <img src="./styles/images/techstackLogos/git.png" alt="git" class="img">
             <p class="text-muted">git</p>
@@ -286,7 +303,9 @@
             <img src="./styles/images/techstackLogos/react.png" alt="React" class="img">
             <p class="text-muted">React</p>
           </div>
+        </div>
 
+        <div class="logos-container-row2">
           <div class="logo">
             <img src="./styles/images/techstackLogos/npm.png" alt="NPM" class="img">
             <p class="text-muted">NPM</p>
@@ -308,13 +327,14 @@
           </div>
 
           <div class="logo">
-            <img src="./styles/images/techstackLogos/python.jpeg" alt="Python" class="img">
+            <img src="./styles/images/techstackLogos/python4.png" alt="Python" class="img">
             <p class="text-muted">Python</p>
           </div>
 
           <div class="logo">
-            <img src="./styles/images/techstackLogos/django.png" alt="Django" class="img">
+            <img src="./styles/images/techstackLogos/django2.png" alt="Django" class="img">
             <p class="text-muted">Django</p>
+          </div>
           </div>
 
         </div>
