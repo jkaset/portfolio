@@ -13,10 +13,10 @@ html {
 	color: #555;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	
 }
 
 .clearfix {zoom: 1}
@@ -32,6 +32,10 @@ html {
 *, ::after, ::before {
 	box-sizing: border-box;
 }
+
+.navlinks {
+	
+}
 /*--------- HEADINGS ----------*/
 
 
@@ -45,31 +49,27 @@ h1 {
     margin-top: 0; 
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%;
-    word-spacing: 4px; 
+    /* font-size: 260%; */
+    word-spacing: 2%; 
     letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 180%;
-    word-spacing: 2px;
+    /* font-size: 180%; */
+    word-spacing: 2%;
     text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    margin: 10vh 0 5vh 0;
+		letter-spacing: 1px;
+		/* color: #fff;
+		background-color: black; */
+		padding-top: 3vh;
+		padding-bottom: 2vh;
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    color: #cf6d17;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
+
 
 h3 {
-    font-size: 110%;
+    /* font-size: 110%; */
     margin-bottom: 15px;
 }
 
@@ -103,15 +103,24 @@ h3 {
 
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+.btn-body:hover,
+.btn-body:active  {
     border: 1px solid #5DADE2;
-    background-color: #2486c7;
+		background-color: #2486c7;
+		color: #fff;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #5DADE2;
     background-color: #5DADE2;
+    color: #fff;
+}
+
+.btn-body {
+	background-color: #5DADE2;
+    border: 1px solid #5DADE2;
     color: #fff;
 }
 
@@ -132,22 +141,33 @@ h3 {
 /*--------------------------------------*/
 /* HEADER AND NAV*/ 
 /*--------------------------------------*/
-
-header {
+.cover-img {
 	background-image: /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ url(./images/hero2.jpg);
-	background-size: cover;
-	background-position: center;
+	background-size: cover;	
+	background-repeat:no-repeat;
+	background-position: center center;
+	position: relative;
 	height: 100vh;
+	width: 100%;	
 	background-attachment: fixed;
 }
 
-.hero-text-box {
-	position: absolute;
-	width: 1140px;
-	top: 36%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.cover-container {
+	height: 100vh;
+	
+	
 }
+
+.text-box {
+	width: fit-content;
+	
+	padding: 15% 0 10% 6%;
+	
+	
+}
+
+
+
 /* ----MAIN NAV---- */
 .main-nav {
 	float: right;
@@ -173,6 +193,10 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
 	border-bottom: 2px solid #5DADE2;
+}
+
+.nav-link {
+	text-align: center;
 }
 /* ----STICKY NAV---- */
 .sticky {
@@ -213,32 +237,80 @@ header {
 }
 
 /*--------------------------------------*/
+/* ABOUT ME */ 
+/*--------------------------------------*/
+.about{
+	padding: 80px 50px 20px 50px;
+	color: #fff;
+	background-color: black;
+}
+
+.about-btn {
+	margin: 5% 0 5% 65%;
+}
+/*--------------------------------------*/
+/* CONTACT */ 
+/*--------------------------------------*/
+.contact {
+	background: linear-gradient(#dfdfdf, white, white, white, #dfdfdf)
+}
+/*--------------------------------------*/
 /* EXPERIENCE AND EDUCATION */ 
 /*--------------------------------------*/
+.experience {
+	
+}
+
 .card-horizontal {
   display: flex;
   flex: 1 1 auto;
 }
 
+.img-square-wrapper {
+	
+}
+
 .experience-img {
-	width: 200px;
+	height: 25vh;
 }
 
 .education-card {
 	text-align: center;
+	padding: 4% 0 1% 0;
+
+}
+
+.fa-circle {
+	font-size: 20%;
+}
+
+.about-btn2 {
+	margin: 5% 0 5% 5%;
 }
 
 /*--------------------------------------*/
 /* TECH STACK */ 
 /*--------------------------------------*/
+.technologies {
+	background: linear-gradient(#dfdfdf, white, white, white, #dfdfdf);
+}
+
 .img {
-	width: 70px;
+	width: 10vw;
+	
 }
 
 .logo {
 	text-align: center;
+	padding: 15px;
 }
 
-.logos-container {
+
+
+.logos-container-row1, .logos-container-row2 {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
+
