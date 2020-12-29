@@ -37,7 +37,14 @@ html {
 	
 }
 /*--------- HEADINGS ----------*/
+a {
+	text-decoration: none;
+	color: #5DADE2;
+}
 
+a:hover {
+	color: #2486c7;
+}
 
 h1, 
 h2,
@@ -49,9 +56,9 @@ h1 {
     margin-top: 0; 
     margin-bottom: 20px;
     color: #fff;
-    /* font-size: 260%; */
+    /* font-size: 460%; */
     word-spacing: 2%; 
-    letter-spacing: 1px;
+    
 }
 
 h2 {
@@ -142,27 +149,35 @@ h3 {
 /* HEADER AND NAV*/ 
 /*--------------------------------------*/
 .cover-img {
-	background-image: /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ url(./images/hero2.jpg);
+	background-image: /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ url(./images/resumeImages/jkCover.png);
 	background-size: cover;	
 	background-repeat:no-repeat;
 	background-position: center center;
 	position: relative;
-	height: 100vh;
-	width: 100%;	
-	background-attachment: fixed;
+	background-size:contain;
+	/* height: 100vh;
+	width: 100%;	 */
+	/* background-attachment: fixed; */
+	background-color: black;
 }
 
 .cover-container {
 	height: 100vh;
 	
 	
+	
 }
 
 .text-box {
-	width: fit-content;
-	
-	padding: 15% 0 10% 6%;
-	
+	/* width: fit-content;
+	background-size:contain; */
+	/* padding: 15% 0 10% 6%; */
+	position: absolute;
+	top: 15%;
+	left: 6%;
+  min-height: 250px;
+	max-width: 60%;
+	background-size:contain;
 	
 }
 
@@ -243,10 +258,17 @@ h3 {
 	padding: 80px 50px 20px 50px;
 	color: #fff;
 	background-color: black;
+	
 }
 
 .about-btn {
-	margin: 5% 0 5% 65%;
+	/* margin: 5% 0 5% 65%;	 */
+	padding: 20px 19px 100px 0;
+}
+.about-btn-group {
+	display: flex;
+	justify-content: flex-end;
+	
 }
 /*--------------------------------------*/
 /* CONTACT */ 
@@ -318,19 +340,63 @@ h3 {
 /*--------------------------------------*/
 /* PORTFOLIO */ 
 /*--------------------------------------*/
+.link-group {
+	padding-top: 10px;
+	padding-bottom: 18px;
+	display: flex;
+	
+	justify-content: space-between;
+}
+
+.middle-link {
+	
+	padding-right: 20px;
+	padding-left: 20px;
+	
+}
+
+.portfolio-sub {
+	text-align: center;
+	color: grey;
+}
+
+.section-portfolio {
+	padding-bottom: 8%;
+	
+}
 
 
+/*--------------------------------------*/
+/* FOOTER */ 
+/*--------------------------------------*/
+/* footer {
+	padding-top: 10%;
+} */
+
+.footer-name {
+	color: black;
+	font-weight: bolder;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: center;
+}
+
+.social-item {
+	padding: 0 15px 0 15px;
+}
 /*--------------------------------------*/
 /* media queries */ 
 /*--------------------------------------*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .modal-xl {
     width: 90%;
    max-width:1200px;
   }
-}
+} */
 
-.modal-dialog {
+/* .modal-dialog {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -341,7 +407,7 @@ h3 {
   height: auto;
   min-width: 70%;
   border-radius: 0;
-}
+} */
 /* 
 .modal-header .close {
 	color: rgb(0, 0, 0); 
@@ -367,16 +433,28 @@ h3 {
 	}
 
 	/* For Mobile */
-@media screen and (max-width: 540px) {
-	.view {
-		min-width: 100vw; /* Equals 42% of screen width */
-    
-	}
+/* ----------- iPhone 6+, 7+ and 8+, x and tablet ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+		font-size: 16px;
 }
 
-/* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-	.view {
-			width: 600px;
-	}
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+		.text-box {
+		font-size: 16px;
+}}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 16px;
 }
