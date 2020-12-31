@@ -19,6 +19,15 @@ html {
 	
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+		html {
+			font-size: smaller;
+		}
+}
+
 .clearfix {zoom: 1}
 .clearfix:after {
 	content: '.';
@@ -33,13 +42,22 @@ html {
 	box-sizing: border-box;
 }
 
-.navlinks {
+.nav-icon {
+	padding-right: 30px;
+}
+
+.navbar-nav > li {
+	display: flex;
+	align-content: center;
+
+		padding-left:20px;
+		padding-right:20px;
 	
 }
 /*--------- HEADINGS ----------*/
 a {
 	text-decoration: none;
-	color: #5DADE2;
+	color: black;
 }
 
 a:hover {
@@ -163,15 +181,24 @@ h3 {
 
 .cover-container {
 	height: 100vh;
-	
-	
-	
 }
 
-.text-box {
-	/* width: fit-content;
-	background-size:contain; */
-	/* padding: 15% 0 10% 6%; */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+		.cover-container {
+			width: 100%;
+			height: 40vh;
+		}
+}
+
+
+
+/* .text-box {
+	width: fit-content;
+	background-size:contain;
+	padding: 15% 0 10% 6%;
 	position: absolute;
 	top: 15%;
 	left: 6%;
@@ -179,12 +206,12 @@ h3 {
 	max-width: 60%;
 	background-size:contain;
 	
-}
+} */
 
 
 
 /* ----MAIN NAV---- */
-.main-nav {
+/* .main-nav {
 	float: right;
 	list-style: none;
 	padding-top: 44px;
@@ -208,10 +235,14 @@ h3 {
 .main-nav li a:hover,
 .main-nav li a:active {
 	border-bottom: 2px solid #5DADE2;
-}
+} */
 
 .nav-link {
 	text-align: center;
+}
+
+.social-links {
+	display: flex;
 }
 /* ----STICKY NAV---- */
 .sticky {
@@ -235,7 +266,7 @@ h3 {
 /*--------------------------------------*/
 /* STICKY BUTTON */ 
 /*--------------------------------------*/
-.fix-me{
+/* .fix-me{
 	position:fixed;
 	margin-right:0;
 	margin-top: 440px;
@@ -249,13 +280,13 @@ h3 {
 	-ms-border-radius: 10%;
 	-o-border-radius: 10%;
 	text-decoration: none;
-}
+} */
 
 /*--------------------------------------*/
 /* ABOUT ME */ 
 /*--------------------------------------*/
 .about{
-	padding: 80px 50px 20px 50px;
+	/* padding: 80px 50px 20px 50px; */
 	color: #fff;
 	background-color: black;
 	
