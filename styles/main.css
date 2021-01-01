@@ -192,17 +192,13 @@ h3 {
 	
 } */
 .cover-img {
-	background-image: url(./images/resumeImages/jkCover.png);
+	background-image: url(./images/resumeImages/jkCover.png) no-repeat center center fixed;
 	background-size: cover;	
-	background-repeat:no-repeat;
+	/* background-repeat:no-repeat;
 	background-position: center center;
-	height: 75vh;
-	width: 100%;
-	position: relative;
-	background-size:contain;
-	
+	position: relative; */
+	background-size:100%;
 	background-color: black;
-	
 }
 /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ 
 /* height: 100vh;
