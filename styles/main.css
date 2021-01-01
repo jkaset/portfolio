@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-	color: #2486c7;
+	color: grey;
 }
 
 h1, 
@@ -202,6 +202,7 @@ h3 {
 	background-size:contain;
 	
 	background-color: black;
+	
 }
 /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ 
 /* height: 100vh;
@@ -318,6 +319,7 @@ h3 {
 	/* padding: 80px 50px 20px 50px; */
 	color: #fff;
 	background-color: black;
+	padding-top: 3%;
 	
 }
 
@@ -330,6 +332,12 @@ h3 {
 	justify-content: flex-end;
 	
 }
+
+
+.jumbotron {
+	margin: 0 4% 0 4%;
+	background-color: black;
+}
 /*--------------------------------------*/
 /* CONTACT */ 
 /*--------------------------------------*/
@@ -339,8 +347,8 @@ h3 {
 /*--------------------------------------*/
 /* EXPERIENCE AND EDUCATION */ 
 /*--------------------------------------*/
-.experience {
-	
+#experienceSection {
+	padding: 1% 2% 0 2%;
 }
 
 .card-horizontal {
