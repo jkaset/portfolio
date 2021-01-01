@@ -19,6 +19,10 @@ html {
 	
 }
 
+body {
+  padding-top: 60px;
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 736px) 
@@ -166,30 +170,55 @@ h3 {
 /*--------------------------------------*/
 /* HEADER AND NAV*/ 
 /*--------------------------------------*/
+.navbar {
+
+}
+
+/* .img-container {
+	padding-top: 2%;
+	background-color: black;
+	position: relative;
+	width: 100%;	
+}
+
 .cover-img {
-	background-image: /* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ url(./images/resumeImages/jkCover.png);
+	background-image: url(./images/resumeImages/coverDark.png);
+	background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+	animation: slideUp 2s 1 ease-out forwards;
+	position: relative;
+	
+} */
+.cover-img {
+	background-image: url(./images/resumeImages/jkCover.png);
 	background-size: cover;	
 	background-repeat:no-repeat;
 	background-position: center center;
+	height: 75vh;
+	width: 100%;
 	position: relative;
 	background-size:contain;
-	/* height: 100vh;
-	width: 100%;	 */
-	/* background-attachment: fixed; */
+	
 	background-color: black;
 }
+/* linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.69)),*/ 
+/* height: 100vh;
+	width: 100%;	 */
+	/* background-attachment: fixed; */
 
-.cover-container {
+/* .img-container {
 	height: 100vh;
-}
+} */
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-		.cover-container {
+		.cover-img {
 			width: 100%;
-			height: 40vh;
+			height: 30vh;
 		}
 }
 
