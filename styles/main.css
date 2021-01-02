@@ -104,6 +104,8 @@ h3 {
 
 /*--------- BUTTONS ----------*/
 
+
+
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -230,13 +232,20 @@ h3 {
   flex: 1 1 auto;
 }
 
-.img-square-wrapper {
-	
-}
-
 .experience-img {
 	height: 25vh;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+		.experience-img {
+			height: 15vh;
+		}
+}
+
+
 
 .education-card {
 	text-align: center;
@@ -311,7 +320,9 @@ h3 {
 /* FOOTER */ 
 /*--------------------------------------*/
 
-
+footer {
+	padding-bottom: 15px;
+}
 .footer-name {
 	color: black;
 	font-weight: bolder;
@@ -323,7 +334,7 @@ h3 {
 }
 
 .social-item {
-	padding: 0 15px 0 15px;
+	padding: 15px 15px 0 15px;
 }
 
 
