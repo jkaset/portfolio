@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-	color: grey;
+	color: rgb(174, 174, 174);
 }
 
 h1, 
@@ -313,6 +313,20 @@ h3 {
 .section-portfolio {
 	padding-bottom: 8%;
 	
+}
+
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.grow {
+	margin: 5px 12px 5px 12px;
+}
+
+.nutshell-img {
+	margin: 32px 0 5px 0;
 }
 
 
